@@ -1,0 +1,66 @@
+
+body {
+    font-family: Arial;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+}
+
+.block {
+    border: 1px dashed gray;
+    padding: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+header p {
+    line-height: 1.5;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.photo-block, .diagram-block {
+    text-align: center;
+}
+
+img {
+    height: 150px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.form-row input {
+    width: 100px;
+}
+
+button {
+    background-color: steelblue;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 10px;
+}
+
+@media (min-width: 576px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

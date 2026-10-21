@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cylinder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Block 1: Heading and two paragraphs -->
+        <header class="block">
+            <h1>Cylinder</h1>
+            <p>
+                A cylinder is a fundamental 3D shape in geometry, which has two
+                parallel circular bases at equal distances. LPG gas cylinder is
+                one such example of a cylinder in real life.
+            </p>
+            <p>
+                The radius of a cylinder (r) is the radius of the 2 bases found
+                at the top and the bottom of the cylinder. The height of the
+                cylinder (h) is the distance between the two circular bases.
+                The volume of the cylinder (v) can be derived as shown in the
+                picture below.
+            </p>
+        </header>
+
+        <main>
+            <!-- Block 2: Cylinder tank photo and source -->
+            <section class="block column photo-block">
+                <img src="asset/tank.jpg" height="150" alt="Storage tanks shaped like cylinders">
+                <p>Cylinder tank</p>
+                <p>Source: <a href="https://pixabay.com/photos/factory-storage-tank-chemistry-644982/" target="_blank" rel="noopener noreferrer">Pixabay</a></p>
+            </section>
+
+            <!-- Block 3: Cylinder volume diagram -->
+            <section class="block column diagram-block">
+                <h2>Cylinder volume</h2>
+                <img src="asset/cylinder.png" height="150" alt="Cylinder volume formula: pi times radius squared times height">
+            </section>
+
+            <!-- Block 4: Volume calculator and JavaScript output -->
+            <section class="block column calculator-block">
+                <h2>Volume calculator</h2>
+                <form id="volumeCalculator">
+                    <div class="form-row">
+                        <label for="inRadius">Radius:</label>
+                        <input type="number" id="inRadius" min="0" step="any" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="inHeight">Height:</label>
+                        <input type="number" id="inHeight" min="0" step="any" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="inUnit">Unit:</label>
+                        <select id="inUnit">
+                            <option value="cm">cm</option>
+                            <option value="mm">mm</option>
+                        </select>
+                    </div>
+                    <button type="submit">Calculate</button>
+                </form>
+                <p id="result" aria-live="polite"></p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Load JavaScript after the HTML elements -->
+    <script src="script.js"></script>
+</body>
+</html>
